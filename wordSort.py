@@ -4,5 +4,6 @@
 
 words = input("Enter words: ").split(" ") #.split(" ") recogmizes spaces and splits them into lists
 words.sort()
-print(words)
+for w in words:
+    print(w)
 
