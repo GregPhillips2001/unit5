@@ -4,8 +4,12 @@
 
 words = input("Enter words: ").split(" ")
 
+numwords = len(words)
+
+for i in range(numwords)
+    length = len(i)
+
 
 for w in words:
-    length = len(w)
     if len(w) > len(w):
         print(w)
