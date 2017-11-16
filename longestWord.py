@@ -4,12 +4,16 @@
 
 words = input("Enter words: ").split(" ")
 
-numwords = len(words)
-
-for i in range(numwords)
-    length = len(i)
-
-
+l = 0
+word = ""
 for w in words:
-    if len(w) > len(w):
-        print(w)
+    length = len(w)
+    if length > l:
+        l = length
+        word = w
+print("The longest word is", word)
+
+    
+
+
+
