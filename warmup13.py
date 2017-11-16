@@ -5,9 +5,10 @@
 from random import randint
 
 for i in range(0,20):
-    list = [i]
-    list.append(i)
-    list.sort()
-    print(0)
-    print(-1)
+    num = [i]
+    num.append(i)
+    num.sort()
+print(num[0])
+print(num[-1])
+print(sum(num))
     
