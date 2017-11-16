@@ -4,11 +4,12 @@
 
 from random import randint
 
-for i in range(0,20):
-    num = [0]
-    num.append(i)
-    num.sort()
-print(num[0])
-print(num[-1])
+num = []
+i = 1
+while i<21:
+    num.append(randint(0,50))
+    i+=1
+print(min(num))
+print(max(num))
 print(sum(num))
     
