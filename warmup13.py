@@ -5,7 +5,7 @@
 from random import randint
 
 for i in range(0,20):
-    num = [i]
+    num = [0]
     num.append(i)
     num.sort()
 print(num[0])
