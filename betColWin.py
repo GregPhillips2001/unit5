@@ -5,25 +5,15 @@
 from random import randint
 from ggame import *
 
-color = ["Color(0xFF0000, 1)","Color(0x00FF00, 1)","Color(0x0000FF, 1)"
+color = ["0xFF0000","0x00FF00","0x0000FF"]
 
 def mouseClick(event):
     num = randint(1,3)
-    
-    if num == 1:
-        red = Color(0xFF0000, 1)
-        redRect = RectangleAsset(1000, 1000, LineStyle(1, red), red)
-        Sprite(redRect)
-        
-    elif num == 2:
-        green = Color(0x00FF00, 1)
-        greenRect = RectangleAsset(1000, 1000, LineStyle(1, green), green)
-        Sprite(greenRect)
+    colors = Color(color[num-1],1)
 
-    else:
-        blue = Color(0x0000FF, 1)
-        blueRect = RectangleAsset(1000, 1000, LineStyle(1, blue), blue)
-        Sprite(blueRect)
+    Rect = RectangleAsset(1000, 1000, LineStyle(1, colors), colors)
+    Sprite(Rect)
+        
 
         
 App().listenMouseEvent("click", mouseClick)
