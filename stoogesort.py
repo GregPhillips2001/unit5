@@ -7,14 +7,18 @@ from time import time
 
 N = 100 #how many numbers will be sorted
 
-i = 0
-j = len[A-1]
+
 
 def mySort(A):
+    i = 0
+    j = len(A)-1
     if A[i] > A[j]:
         A[i] = A[j]
     if (j-i+1) > 2:
         t = (j-i+1)/3
+        mysort(A, i , j-t)
+        mysort(A, i+t, j)
+        mysort(A, i , j-t)
     
     return A
 
