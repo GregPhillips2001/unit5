@@ -8,7 +8,7 @@ from time import time
 N = 100 #how many numbers will be sorted
 
 def mySort(A):
-     i = 1
+    i = 1
     while i < len(A):
         j=i
         while j > 0 and A[j-1] > A[j]:
