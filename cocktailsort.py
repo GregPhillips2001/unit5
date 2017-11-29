@@ -8,20 +8,13 @@ from time import time
 N = 100 #how many numbers will be sorted
 
 def mySort(A):
-    swapped = True
-    while swapped:
-        swapped = False
-        for i in range(0,len(A)-1):
-            if A[i] > A[i+1]:
-                A[i], A[i+1] = A[i+1], A[i] #swap in python
-                swapped = True
-        if not swapped:
-            break
-        swapped = False
-        for i in range(len(A)-2,-1,-1):
-            if A[i] > A[i+1]:
-                A[i], A[i+1] = A[i+1], A[i] #swap in python
-                swapped = True
+     i = 1
+    while i < len(A):
+        j=i
+        while j > 0 and A[j-1] > A[j]:
+            A[j], A[j-1] = A[j-1], A[j] #swap in python
+            j -= 1
+        i += 1
     
     return A
 
