@@ -3,14 +3,18 @@
 #quiz5.py
 
 #rand5
-
 def rand5():
     from random import randint
-    print([randint(1,100),randint(1,100),randint(1,100),randint(1,100),randint(1,100)])
-rand5()
+    return([randint(1,100),randint(1,100),randint(1,100),randint(1,100),randint(1,100)])
+print(rand5())
 
 #lastElement
+def lastElement(A):
+    return (A[-1])
+print(lastElement(['dog','cat','rat']))
 
-def lastElement(x = ['house','bed','couch']):
-    print(x[-1])
-lastElement()
+#biggest
+def biggest(B):
+    B.sort()
+    return (B[-1])
+print(biggest([3,-1,5,-2,7,2,1]))
